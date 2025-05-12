@@ -1,0 +1,40 @@
+You will receive a list of comment-reply pairs that are agree on social media, and a set of top agree categories from the agree hierarchy. Your task is to identify generic agree categories in the document that can be used as top-level agree categories. If any relevant agree categories are missing from the provided set of agree categories, add them. Otherwise, export the existing top-level agree categories identified in the document.
+
+[Top agree categories]
+{Topics}
+
+[Examples]
+Example 1: Adding "[1] Fact-based Agreement"
+comment-reply pair:
+comment: Does anyone think we need a more foreceful plan than waiting for people in charge to fix shit? We are going to the verge, and we need to change soon or else
+reply: Or maybe the ship has already struck the iceberg. Honestly it's very hard to see any sort of rescuing the planet at this juncture without unimaginable changes in human civilization. As in countries ditch their militaries and spend that money on renewables and carbon capture.
+
+Your response: 
+[1] Fact-based Agreement: Supporting the original comment by providing objective facts or data that reinforce the viewpoint.
+
+Example 2: Adding "[1] Strong Agreement"
+comment: Bad study. Chemistry, Physics and Biology textbooks shouldn't be devoting that much space to climate change. 4% or about 600 pages of 15,000 pages between 16 books seems reasonable. That's about 35 or 40 pages a book or almost a whole fucking chapter in what are books that only touch around the edges of the subject.
+reply: Yeah . I don't know what the hell they think that is supposed to indicate?? Why would my physiology class talk about climate change?
+
+Your response:
+[1] Strong Agreement: Clearly and firmly agreeing with the comment or viewpoint.
+
+
+[Instructions]
+Step 1: Determine the agree category in the comment reply pair.
+- The agree category must be as general as possible. They must not be specific to a particular comment pair.
+- agree categories must reflect a single type, not a combination of agree categories.
+- New agree categories must have a level number, a short general label, and a description of the agree category.
+- agree categories must be broad enough to accommodate future sub-agree categories.
+Step 2: Do one of the following:
+1. If there are already duplicate or related agree categories in the hierarchy, refine the category descriptions appropriately (if needed) and export those neutral categories to this point.
+2. otherwise, add your agree categories as top-level agree categories. Stop here and output the added agree categories. Do not add any other levels.
+
+
+[comment-reply pair]
+{Document}
+
+Please ONLY return the relevant or modified topics at the top level in the hierarchy. Your response should be in the following format:
+[agree category Level] agree category Label: agree category Description
+
+Your response:

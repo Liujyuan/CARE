@@ -1,0 +1,1 @@
+[1] Strong Agreement: Clearly and firmly agreeing with the comment or viewpoint. 

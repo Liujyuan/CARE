@@ -29,4 +29,4 @@ This utility is used to generate the necessary JSON files for **Supervised Fine-
 
 ### Zero-Shot Disagreement Detection
 
-For **zero-shot disagreement detection**, we leverage a predefined taxonomy and the CARP prompt to identify disagreements without prior training on specific examples.
+For **zero-shot disagreement detection**, we leverage the **taxonomy generated during the CA stage** and the CARP prompt to identify disagreements without prior training on specific examples.

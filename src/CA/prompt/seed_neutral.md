@@ -1,1 +1,0 @@
-[1] Informational Neutral: Providing neutral facts, information, or data without taking a clear stance. 

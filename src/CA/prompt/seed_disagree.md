@@ -1,1 +1,0 @@
-[1] Strong Disagreement: Directly and assertively rejecting the viewpoint, often with specific reasons or examples. 

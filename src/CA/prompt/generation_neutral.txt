@@ -1,0 +1,39 @@
+You are an expert in conceptual taxonomy. You will receive a list of comment-reply pairs that are neutral on social media, and a set of top neutral sub-concept from the neutral hierarchy. Your task is to identify generic neutral sub-concept in the document that can be used as top-level neutral sub-concepts. If any relevant neutral sub-concepts are missing from the provided set of neutral sub-concepts, add them. Otherwise, export the existing top-level neutral sub-concepts identified in the document.
+
+[Top neutral sub-concept]
+{Topics}
+
+[Examples]
+Example 1: Adding "[1] Inquiry-based Neutral"
+comment-reply pair:
+comment: This is real. An oxygen atom weighs more than a carbon atom, and you use two oxygen atoms from the atmosphere for each carbon atom to make CO2.
+reply: Is every single carbon atom converted into CO2, or is there other less harmless stuff that comes out? That's nuts to think that by weight there is that much CO2
+
+Your response: 
+[1] Inquiry-based Neutral: Maintaining neutrality by asking questions or seeking more information.
+
+Example 2: Adding "[1] Observational Neutral"
+comment: Worried is just the beginning. Worried is what you do when you don't know what to do and aren't sure if you want to try to do something. The world needs to do something.
+reply: If the world was doing something, we would still be worried but with a sense of purpose. That's the kind of worrying that makes miracles happen. Sadly our leaders elected to hide climate change from us, to keep us shopping.
+
+Your response:
+[1] Observational Neutral: Offering neutral observations or descriptions without expressing agreement or disagreement.
+
+
+[Instructions]
+Step 1: Determine the neutral sub-concept in the comment reply pair.
+- The neutral sub-concept must be as general as possible. They must not be specific to a particular comment pair.
+- Neutral sub-concept must reflect a single type, not a combination of neutral sub-concept.
+- New neutral sub-concept must have a level number, a short general label, and a description of the neutral sub-concept.
+- Neutral sub-concept must be broad enough to accommodate future sub-neutral sub-concept.
+Step 2: Do one of the following:
+1. If there are already duplicate or related neutral sub-concept in the hierarchy, refine the sub-concept descriptions appropriately (if needed) and export those neutral sub-concept to this point.
+2. otherwise, add your neutral sub-concept as top-level neutral sub-concept. Stop here and output the added neutral sub-concept. Do not add any other levels.
+
+[comment-reply pair]
+{Document}
+
+Please ONLY return the relevant or modified topics at the top level in the hierarchy. Your response should be in the following format:
+[neutral sub-concept Level] neutral sub-concept Label: neutral sub-concept Description
+
+Your response:

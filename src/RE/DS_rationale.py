@@ -23,7 +23,7 @@ def extract_last_sentence(text):
         return text
 
 def map_string_to_number(input_string):
-    # 定义映射关系和对应的关键词
+    # 
     mapping = {
         0: ['disagree', 'against'],
         1: ['neutral'],
@@ -52,8 +52,6 @@ def map_string_to_number(input_string):
 
 def get_ans(author_parent, author_child, submission, subreddit, pb, cb, label):
     """
-    使用LLM API批量获取深层和浅层主题。
-    返回一个包含两个主题的字典列表。
     """
     mapping = {
         0: 'disagree',

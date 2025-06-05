@@ -109,7 +109,7 @@ def get_ans(author_parent, author_child, submission, subreddit, pb, cb, label,an
 def log_progress_with_time(current, total, log_file='progress_with_time.log'):
 
     progress = current / total * 100
-    if (progress % 1 < 1e-3) or current == total:  # 检查是否达到新的百分比或结束时
+    if (progress % 1 < 1e-3) or current == total:  # 
         current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         with open(log_file, 'a') as f:
             f.write(f"Time: {current_time}, Progress: {int(progress)}%\n")
@@ -118,13 +118,13 @@ def log_progress_with_time(current, total, log_file='progress_with_time.log'):
 def apply_with_progress_and_logging(df, func, log_file='progress_with_time.log'):
 
     total = len(df)
-    with open(log_file, 'w') as f:  # 清空日志文件
+    with open(log_file, 'w') as f:  # 
         f.write('')
 
     results = []
     for idx, row in tqdm(df.iterrows(), total=df.shape[0]):
         result = func(row)
-        log_progress_with_time(idx + 1, total, log_file)  # 记录进度和时间
+        log_progress_with_time(idx + 1, total, log_file)  # 
         results.append(result)
     return pd.Series(results, index=df.index)
 
@@ -178,7 +178,7 @@ base_url = ""
 client = OpenAI(api_key="", base_url=base_url)
 model_res=''
 
-# 加载过滤后的数据
+# 
 mode='train'#test train
 df = pd.read_csv(mode+'_given_false_1000.csv')
 
